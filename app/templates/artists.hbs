@@ -1,6 +1,9 @@
 <div class="container">
   <div class="row">
     <div class="col-md-4">
+      {{#link-to 'artists.new' }}
+        Create Artist
+      {{/link-to}}
       {{#each model.artists as |artist|}}
         <div>
           {{#link-to 'artists.artist' artist.id}}
